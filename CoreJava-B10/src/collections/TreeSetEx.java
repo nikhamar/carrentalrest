@@ -24,6 +24,7 @@ public class TreeSetEx implements Comparable {
         students.add(s2);
         students.add(s3);
         System.out.println(students);
+
     }
 
     @Override

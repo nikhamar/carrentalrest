@@ -14,7 +14,7 @@ public class ArrayList {
         l.add("nikhil");
         l.add("amaraneni");
         System.out.println(l);
-
+        System.out.println("hi");
     }
 }
 

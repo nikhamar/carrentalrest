@@ -15,4 +15,6 @@ public class Question1 implements InterfaceEx1, InterfaceEx2 {
     public String m2() {
         return "Amaraneni";
     }
+
 }
+

@@ -15,6 +15,7 @@ public class ArrayList {
         l.add("amaraneni");
         System.out.println(l);
         System.out.println("hi");
+        System.out.println("test git");
     }
 }
 

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <bean id="Hello" class="HelloWorld"  init-method="init" destroy-method="destroy">
+    <!--<property name="message" value="Hello WorlDoiuytrew"></property>-->
+    <constructor-arg name="message" value="wwwwwwwwww"/>
+
+    </bean>
+    <bean id="message" class="Message">
+    <property name="message" value="Hello"/>
+
+    </bean>
+    <bean id="hey" class="Hello" autowire="constructor">
+        <constructor-arg name="set">
+            <set>
+                    <value>hello1</value>
+                    <value>hello2</value>
+            </set>
+        </constructor-arg>
+    </bean>
+
+    <bean id="books" class="Book">
+    <!--<property name="booknames">-->
+        <!--<list>-->
+            <!--<value>book1</value>-->
+            <!--<value>book2</value>-->
+        <!--</list>-->
+    <!--</property>-->
+
+        <constructor-arg  name="booknames">
+            <!--<list>-->
+                <!--<value>book1</value>-->
+                <!--<value>book2</value>-->
+            <!--</list>-->
+<map>
+    <entry key="a" value="jaffa"></entry>
+</map>
+        </constructor-arg>
+    </bean>
+<!--<bean id="processor" class="BeanProcessor"/>-->
+</beans>
+

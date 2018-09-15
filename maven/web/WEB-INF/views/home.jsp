@@ -6,6 +6,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib pref
+          ix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 <html>
 <title>W3.CSS Template</title>
@@ -55,7 +57,7 @@
                           class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close Modal">×</span>
                     <img src="hos.jpg" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
 
-                    <form class="w3-container" action="/validatelogin" method="post">
+                    <form:form class="w3-container" action="/validatelogin" method="post" modelAttribute="login">
                         <div class="w3-section">
                             <label><b>Username</b></label>
                             <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username"
@@ -68,7 +70,7 @@
                             <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me
                         </div>
 
-                    </form>
+                    </form:form>
                     <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
                         <button onclick="document.getElementById('id01').style.display='none'" type="button"
                                 class="w3-button w3-red">Cancel
